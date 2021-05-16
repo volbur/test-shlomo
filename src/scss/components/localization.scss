@@ -1,0 +1,81 @@
+.localization {
+  position: relative;
+  min-height: 647px;
+  padding: 16px 0 66px;
+  background: url("../img/bg-build-mobile.jpg") center center/cover no-repeat;
+  &::after {
+    content: "";
+    display: block;
+    background-color: rgba(33, 50, 94, 0.8);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__wrapper-title {
+    position: relative;
+  }
+  &__icon-avatar {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/icons/icon-avatar.png") center center/cover
+      no-repeat;
+  }
+  &__title {
+    position: relative;
+    padding-bottom: 12px;
+    padding-right: 47px;
+    width: 265px;
+    border-bottom: 3px solid $white;
+    text-align: right;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: $white;
+  }
+  &__text {
+    margin-top: 48px;
+    width: 340px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    color: $white;
+  }
+}
+
+@media (min-width: $desktop) {
+  .localization {
+    min-height: 754px;
+    padding: 48px 0 71px;
+    background-image: url("../img/bg-car-desctop.jpg");
+    &__title {
+      padding-right: 106px;
+      width: auto;
+      border-bottom: 5px solid $white;
+      font-size: 48px;
+      line-height: 55px;
+      &::after {
+        top: -10px;
+        width: 76px;
+        height: 76px;
+      }
+    }
+    &__text {
+      margin-top: 48px;
+      width: auto;
+    }
+  }
+}

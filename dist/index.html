@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-</head>
-<body>
-  <div id="app">
-    {{text}}
-  </div>
-  <script src="js/index.js"></script>
-</body>
+  <!-- dir="rtl" -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="header">
+        <div class="header__profile-info">
+          <div class="profile-info__text">
+            <span>ילארשי ל </span>ארשי ןכוסה םש
+          </div>
+          <div class="profile-info__text"><span>למשח </span>תרבח ביטקלוק</div>
+          <div class="profile-info__text"><span>השמ םייח </span>,םולש</div>
+        </div>
+        <a href="#" class="header__avatar">
+          <img src="img/icons/icon-profile.svg" alt="avatar" />
+        </a>
+      </header>
+      <srction class="subheader">
+        <div class="subheader__title"><span>השמ םייח</span> ,םולש</div>
+      </srction>
+      <main class="main">
+        <section class="localization">
+          <div class="localization__wrapper">
+            <div class="localization__wrapper-title">
+              <h1 class="localization__title">
+                ריחמה תעצהב היפצ - תכרעמל הסינכ
+              </h1>
+              <a href="#" class="localization__icon-avatar"></a>
+            </div>
+            <p class="localization__text">
+              שדח דוק תחילש לע ץחל דוק תלביק אל םא ,הסינכה דוק תא ןזה
+            </p>
+            <form action="#" class="localization__form form">
+              <div class="form__user-name">
+                <label class="form__label" for="user-name">שמתשמ םש</label>
+                <div class="form__wrapper-input">
+                  <button class="form__btn-icon">
+                    <img src="img/icons/icon-cross.png" alt="icon-cross" />
+                  </button>
+                  <input class="form__input" type="text" id="user-name" />
+                </div>
+              </div>
+              <div class="form__password">
+                <label class="form__label" for="user-password">אמסיס</label>
+                <input class="form__input" type="text" id="user-passworde" />
+              </div>
+              <div class="form__btns">
+                <button class="btn btn__out">הסינכ</button>
+                <button class="btn btn__submit" type="submit">לוטיב</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
 </html>

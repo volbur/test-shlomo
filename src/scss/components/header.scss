@@ -1,0 +1,54 @@
+.header {
+  padding: 0 11px;
+  min-height: 63px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__avatar {
+    margin-left: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: $green;
+  }
+  .profile-info__text {
+    font-size: 10px;
+    line-height: 10px;
+    color: $green;
+    text-align: right;
+    &:last-child {
+      margin-top: 6px;
+      color: $orange;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .header {
+    padding: 0 20px;
+    min-height: 106px;
+    &__avatar {
+      margin-left: 19px;
+      width: 38px;
+      height: 38px;
+    }
+    .profile-info__text {
+      font-size: 16px;
+      line-height: 18px;
+      &:last-child {
+        display: none;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
