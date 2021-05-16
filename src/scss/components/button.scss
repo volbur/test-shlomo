@@ -34,6 +34,42 @@ button {
         no-repeat;
     }
   }
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: $green;
+    border-radius: 100%;
+  }
+  &-icon__search {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      background: url("../img/icons/icon-plus.svg");
+    }
+  }
+  &-icon__message {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 17px;
+      background: url("../img/icons/icon-letter.svg");
+    }
+  }
+  &-icon__pen {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      background: url("../img/icons/icon-pan.svg");
+    }
+  }
 }
 
 @media (min-width: $desktop) {

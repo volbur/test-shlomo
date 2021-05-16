@@ -1,0 +1,45 @@
+.card {
+  padding: 15px 10px 25px;
+  width: 330px;
+  min-height: 383px;
+  background: $white;
+  border-radius: 30px;
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__divider {
+    margin: 13px 0;
+    height: 2px;
+    background: $blue;
+    border-radius: 2px;
+  }
+  &__order {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__orders {
+    display: grid;
+  }
+  &__order-name {
+    text-align: right;
+    font-size: 18px;
+    line-height: 21px;
+    color: $grey3;
+  }
+  &__order-value {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: $blue;
+  }
+}

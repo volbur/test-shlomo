@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- dir="rtl" -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="header">
+        <div class="header__profile-info">
+          <div class="profile-info__text">
+            <span>ילארשי ל </span>ארשי ןכוסה םש
+          </div>
+          <div class="profile-info__text"><span>למשח </span>תרבח ביטקלוק</div>
+          <div class="profile-info__text visually-hidden">
+            <span>השמ םייח </span>,םולש
+          </div>
+        </div>
+        <a href="#" class="header__avatar">
+          <img src="img/icons/icon-profile.svg" alt="avatar" />
+        </a>
+      </header>
+      <main class="main">
+        <section class="offers">
+          <div class="offers__wrapper">
+            <div class="offers__sorts">
+              <div class="offers__sorts-left">וקפוהש תוסילופ</div>
+              <div class="offers__sorts-right">תונורחא תועצה</div>
+            </div>
+            <form action="#" class="offers__form form-offers">
+              <div class="form-offers__bottom">
+                <button
+                  class="btn-icon btn-icon__search btn__submit"
+                  type="submit"
+                ></button>
+                <div class="form-offers__search">
+                  <button class="form-offers__icon-search">
+                    <img src="img/icons/icon-search.svg" alt="icon search" />
+                  </button>
+                  <input
+                    class="form-offers__search"
+                    type="text"
+                    id="input-search"
+                    placeholder="אמסיס"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="offers__divider"></div>
+            <ul class="offers__cards">
+              <li class="offers__card card">
+                <div class="card__header">
+                  <div class="card__btns">
+                    <button class="btn-icon btn-icon__message"></button>
+                    <button class="btn-icon btn-icon__pen"></button>
+                  </div>
+                  <img
+                    class="card__icon"
+                    src="img/icons/icon-car.svg"
+                    alt="icon-car"
+                  />
+                </div>
+                <div class="card__divider"></div>
+                <div class="card__body">
+                  <div class="card__order">
+                    <span class="card__order-name">ביטקלוק</span>
+                    <span class="card__order-value">ביטקלוקה םש</span>
+                  </div>
+                  <div class="card__order">
+                    <span class="card__order-name">חטובמ םש</span>
+                    <span class="card__order-value">םהרבא ןב קחצי</span>
+                  </div>
+                  <div class="card__orders">
+                    <div class="card__order">
+                      <span class="card__order-name">חטובמ םש</span>
+                      <span class="card__order-value">12-345-67</span>
+                    </div>
+                    <div class="card__order">
+                      <span class="card__order-name">חוטיב תליחת</span>
+                      <span class="card__order-value">04.04.2020</span>
+                    </div>
+                    <div class="card__order">
+                      <span class="card__order-name">תוהז תדועת</span>
+                      <span class="card__order-value">038974573</span>
+                    </div>
+                    <div class="card__order">
+                      <span class="card__order-name">העצה תחיתפ</span>
+                      <span class="card__order-value">12.10.2019</span>
+                    </div>
+                  </div>
+                  <div class="card__bottom">
+                    <span class="card__order-instock">(חוקלל החלשנ)</span>
+                    <div class="card__order-number">
+                      <span class="card__order-name">הסילופ</span>
+                      <span class="card__order-value">123456789012</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

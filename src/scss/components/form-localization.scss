@@ -1,4 +1,4 @@
-.form {
+.form-localization {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: $desktop) {
-  .form {
+  .form-localization {
     &__user-name {
       &::after {
         bottom: 18px;
