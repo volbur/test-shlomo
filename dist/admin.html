@@ -92,7 +92,7 @@
                   </div>
                   <div class="card__order">
                     <span class="card__order-name">העצה תחיתפ</span>
-                    <span class="card__order-value">{{inpu.dateEnd}}</span>
+                    <span class="card__order-value">{{item.dateEnd}}</span>
                   </div>
                 </div>
 
@@ -107,7 +107,7 @@
             </li>
           </ul>
           <ul class="offers__cards-desktop cards-desktop">
-            <li class="card-desktop__head">
+            <li class="card-desktop__head" >
               <div class="card-desktop__title row1">חוקלל חלשנ</div>
               <div class="card-desktop__title row2">הסילופ ‘סמ</div>
               <div class="card-desktop__title row3">חוטיבה תליחת</div>
@@ -118,33 +118,33 @@
               <div class="card-desktop__title row8">רצומ</div>
               <div class="card-desktop__title row9">ףנע</div>
             </li>
-            <li class="card-desktop">
+            <li class="card-desktop" v-for="item in items">
               <div class="card-desktop__item row1">
-                <span class="card-desktop__item-check"></span>
+                <span class="card-desktop__item-check" v-if="item.isActive"></span>
               </div>
               <div class="card-desktop__item row2">
-                <span></span>123456789012</span>
+                <span></span>{{item.id}}</span>
               </div>
               <div class="card-desktop__item row3">
-                <span>04.04.2020</span>
+                <span>{{item.dateStart}}</span>
               </div>
               <div class="card-desktop__item row4">
-                <span>12.10.2019</span>
+                <span>{{item.dateEnd}}</span>
               </div>
               <div class="card-desktop__item row5">
-                <span>039894872</span>
+                <span>{{item.phoneNumber}}</span>
               </div>
               <div class="card-desktop__item row6">
-                <span>12-345-67</span>
+                <span>{{item.orderId}}</span>
               </div>
               <div class="card-desktop__item row7">
-                <span>םהרבא ןב קחצי</span>
+                <span>{{item.firstName}}</span>
               </div>
               <div class="card-desktop__item row8">
-                <span>רצומה םש</span>
+                <span>{{item.lastName}}</span>
               </div>
               <div class="card-desktop__item row9">
-                <span>בכר</span>
+                <span>{{item.model}}</span>
               </div>
               <div class="card-desktop__item-nav card-desktop__nav-list">
                 <div class="card-desktop__nav-item">

@@ -39,7 +39,10 @@
     }
   }
   &__cards {
-    max-width: 330px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // max-width: 330px;
     margin: 26px auto 0 auto;
     list-style: none;
   }
@@ -69,6 +72,7 @@
       background: $white;
     }
     &__cards {
+      display: none;
       max-width: 330px;
       margin: 0 auto;
       list-style: none;
