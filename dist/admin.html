@@ -54,7 +54,7 @@
             </div>
           </form>
           <ul class="offers__cards">
-            <li class="offers__card card">
+            <li class="offers__card card" v-for="item in items">
               <div class="card__header">
                 <div class="card__btns">
                   <button class="btn-icon btn-icon__message"></button>
@@ -70,29 +70,29 @@
               <div class="card__body">
                 <div class="card__order-descr">
                   <span class="card__order-name">ביטקלוק</span>
-                  <span class="card__order-value">ביטקלוקה םש</span>
+                  <span class="card__order-value">{{item.firstName}}</span>
                 </div>
                 <div class="card__order-descr">
                   <span class="card__order-name">חטובמ םש</span>
-                  <span class="card__order-value">םהרבא ןב קחצי</span>
+                  <span class="card__order-value">{{item.lastName}}</span>
                 </div>
 
                 <div class="card__order-group">
                   <div class="card__order">
                     <span class="card__order-name">חטובמ םש</span>
-                    <span class="card__order-value">12-345-67</span>
+                    <span class="card__order-value">{{item.orderId}}</span>
                   </div>
                   <div class="card__order">
                     <span class="card__order-name">חוטיב תליחת</span>
-                    <span class="card__order-value">04.04.2020</span>
+                    <span class="card__order-value">{{item.dateStart}}</span>
                   </div>
                   <div class="card__order">
                     <span class="card__order-name">תוהז תדועת</span>
-                    <span class="card__order-value">038974573</span>
+                    <span class="card__order-value">{{item.phoneNumber}}</span>
                   </div>
                   <div class="card__order">
                     <span class="card__order-name">העצה תחיתפ</span>
-                    <span class="card__order-value">12.10.2019</span>
+                    <span class="card__order-value">{{inpu.dateEnd}}</span>
                   </div>
                 </div>
 
@@ -100,7 +100,7 @@
                   <span class="card__order-instock">(חוקלל החלשנ)</span>
                   <div class="card__order-number">
                     <span class="card__order-name">הסילופ</span>
-                    <span class="card__order-value">123456789012</span>
+                    <span class="card__order-value">{{item.id}}</span>
                   </div>
                 </div>
               </div>
