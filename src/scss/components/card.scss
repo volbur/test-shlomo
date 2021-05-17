@@ -1,6 +1,5 @@
 .card {
   padding: 15px 10px 25px;
-  width: 330px;
   min-height: 383px;
   background: $white;
   border-radius: 30px;
@@ -21,13 +20,23 @@
     background: $blue;
     border-radius: 2px;
   }
+  &__order-descr {
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   &__order {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-  &__orders {
+  &__order-group {
+    margin-bottom: 14px;
     display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 65px;
+    row-gap: 14px;
   }
   &__order-name {
     text-align: right;
@@ -41,5 +50,20 @@
     font-size: 20px;
     line-height: 23px;
     color: $blue;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__order-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__order-instock {
+    font-size: 20px;
+    line-height: 23px;
+    color: $green;
   }
 }

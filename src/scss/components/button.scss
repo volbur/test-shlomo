@@ -10,7 +10,6 @@ button {
 }
 
 .btn {
-  width: 156px;
   height: 40px;
   background: $green;
   border-radius: 35px;
@@ -71,10 +70,15 @@ button {
     }
   }
 }
+.localization .btn {
+  width: 156px;
+}
+.offers .btn.btn__out {
+  display: none;
+}
 
 @media (min-width: $desktop) {
   .btn {
-    width: 350px;
     height: 58px;
     font-size: 24px;
     line-height: 28px;
@@ -84,5 +88,20 @@ button {
         left: 130px;
       }
     }
+  }
+  .localization .btn {
+    width: 350px;
+  }
+  .offers .btn.btn__out {
+    display: inline-block;
+    width: 284px;
+    background-color: $green;
+  }
+  .offers .btn__out::before {
+    left: 44px;
+  }
+
+  .offers .btn-icon__search {
+    display: none;
   }
 }
