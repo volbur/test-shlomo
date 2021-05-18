@@ -39,8 +39,11 @@ button {
     align-items: center;
     width: 40px;
     height: 40px;
-    background: $green;
+    background-color: $green;
     border-radius: 100%;
+  }
+  &-icon--white {
+    background-color: $white;
   }
   &-icon__search {
     &::after {
@@ -66,7 +69,7 @@ button {
       display: inline-block;
       width: 19px;
       height: 19px;
-      background: url("../img/icons/icon-pan.svg");
+      background: url("../img/icons/icon-pen.svg");
     }
   }
 }

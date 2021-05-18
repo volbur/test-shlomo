@@ -1,7 +1,6 @@
 .card {
   padding: 15px 10px 25px;
   margin: 0 10px 20px;
-  // margin-bottom: 30px;
   min-height: 383px;
   width: 330px;
   background: $white;
@@ -12,16 +11,19 @@
     align-items: center;
     width: 95px;
   }
+  &__icon-letter path {
+    fill: $white;
+  }
+  &__icon-pen path {
+    fill: $white;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  &__divider {
-    margin: 13px 0;
-    height: 2px;
-    background: $blue;
-    border-radius: 2px;
+    margin-bottom: 13px;
+    padding-bottom: 13px;
+    border-bottom: 2px solid $blue;
   }
   &__order-descr {
     margin-bottom: 14px;
