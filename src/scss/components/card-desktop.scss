@@ -1,18 +1,20 @@
 .card-desktop {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: 0 auto 10px;
-  max-width: $desktop;
-  height: 45px;
-  background-color: $white;
-  border-radius: 35px;
-  list-style: none;
-  cursor: pointer;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 10px;
+    max-width: $desktop;
+    height: 45px;
+    background-color: $white;
+    border-radius: 35px;
+    list-style: none;
+    cursor: pointer;
+  }
   &:hover &__item-nav {
     display: flex;
   }
-  &:hover {
+  &:hover &__wrapper {
     background-color: $orange;
   }
   &:hover &__item {

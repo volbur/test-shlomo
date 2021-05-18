@@ -8,11 +8,10 @@
   padding: 16px 24px 0;
   background-color: rgba(33, 50, 94, 0.8);
   &__wrapper-title {
-    margin: 0 auto;
-    padding-bottom: 12px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 12px;
     border-bottom: 3px solid $white;
   }
   &__icon-avatar {
@@ -51,8 +50,9 @@
   .localization {
     padding: 48px 0 71px;
     &__wrapper-title {
+      margin: 0 auto;
+      max-width: $desktop;
       border-bottom: 5px solid $white;
-      width: $desktop;
     }
     &__title {
       font-size: 48px;
