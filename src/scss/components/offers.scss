@@ -3,8 +3,14 @@
   display: flex;
   flex-grow: 1;
 }
-.cards-desktop {
-  display: none;
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  &__head {
+    display: none;
+  }
 }
 .offers {
   padding-top: 27px;
@@ -51,7 +57,7 @@
   .main-admin {
     background: url("../img/bg-build-desctop.jpg") center center/cover no-repeat;
   }
-  .cards-desktop {
+  .cards {
     display: block;
   }
   .offers {
@@ -64,25 +70,10 @@
       font-size: 30px;
       line-height: 58px;
     }
-    &__divider {
-      margin: 26px auto;
-      max-width: 330px;
-      height: 3px;
-      background: $white;
-    }
-    &__cards-mobile {
-      display: none;
-      max-width: 330px;
-      margin: 0 auto;
-      list-style: none;
-    }
     &__cards {
-      display: none;
-      margin-top: 35px;
+      margin: 35px auto 0;
       max-width: $desktop;
-    }
-    &__cards-desktop {
-      margin-top: 35px;
+      list-style: none;
     }
   }
 }

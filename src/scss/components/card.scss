@@ -1,0 +1,183 @@
+.card {
+  margin: 0 15px 30px;
+  list-style: none;
+  &__wrapper {
+    position: relative;
+    padding: 15px 24px 24px;
+    max-width: 330px;
+    background-color: $white;
+    border-radius: 35px;
+    list-style: none;
+    &::before {
+      position: absolute;
+      top: 70px;
+      left: 8px;
+      content: "";
+      display: inline-block;
+      width: 310px;
+      height: 2px;
+      background-color: $blue;
+    }
+  }
+  .btn-icon {
+    background-color: $green;
+  }
+  &__head {
+    display: none;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    &--left {
+      align-items: flex-start;
+    }
+    &-head {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: right;
+      color: $grey3;
+    }
+    &-value {
+      text-align: right;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      color: $blue2;
+    }
+    &-isactive {
+      span {
+        font-weight: bold;
+        color: $green;
+      }
+      svg {
+        display: none;
+      }
+    }
+    &-iconcar {
+      justify-content: center;
+      padding-bottom: 13px;
+      span {
+        display: none;
+      }
+      img {
+        max-width: 66px;
+        height: 22px;
+      }
+    }
+    &-iconcar span {
+      display: none;
+    }
+  }
+  &__item-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 95px;
+    padding-bottom: 13px;
+  }
+
+  &__nav-text {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .card {
+    margin: 0 0 10px 0;
+    &__wrapper {
+      padding: 0;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: $desktop;
+      height: 45px;
+      cursor: pointer;
+      &::before {
+        display: none;
+      }
+    }
+    &:hover &__item-nav {
+      display: flex;
+    }
+    &:hover &__wrapper {
+      background-color: $orange;
+    }
+    &:hover &__item {
+      color: $white;
+    }
+    &:hover &__icon-check path {
+      stroke: $white;
+    }
+    &__head {
+      margin: 0 auto 20px;
+      display: flex;
+      max-width: $desktop;
+    }
+    &__title {
+      text-align: center;
+      font-size: 14px;
+      line-height: 16px;
+      color: $grey2;
+    }
+    &__item {
+      display: block;
+      text-align: center;
+      border-left: 1px solid $grey4;
+      &-head {
+        display: none;
+      }
+      &-value {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: normal;
+      }
+      &-isactive {
+        span {
+          display: none;
+        }
+        svg {
+          display: inline;
+        }
+      }
+      &-iconcar {
+        padding-bottom: 0;
+        span {
+          display: inline;
+        }
+        img {
+          display: none;
+        }
+      }
+      &:first-child {
+        border-left: none;
+      }
+      &-check {
+        display: inline-block;
+        width: 24px;
+        height: 20px;
+        margin: 0 auto;
+        background: url("../img/icons/icon-check.svg") center center/cover
+          no-repeat;
+      }
+    }
+    &__nav-item {
+      margin: 0 5px;
+    }
+    &__item-nav {
+      display: none;
+      position: absolute;
+      top: 3px;
+      right: -115px;
+    }
+    &__nav-text {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: $white;
+    }
+  }
+}
